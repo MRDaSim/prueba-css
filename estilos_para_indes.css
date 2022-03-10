@@ -4,7 +4,7 @@
 }
 
 body {
-    background: lightgray;
+    background: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
@@ -13,24 +13,30 @@ body {
     /*width: 95%;*/
     width: 1700px;
     margin: 0px auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 header {
     background: rgb(255, 0, 102);
-    height: 250px;
+    height: 150px;
     width: 100%;
     margin: 0px;
     text-align: center;
-    line-height: 250px;
+    font-size: 30px;
+    line-height: 150px;
     color: white;
     border-bottom: 20px solid white;
 }
 
+.clearfix {
+    clear: both;    
+}
+
 nav {
     background:rgb(255, 204, 0);
-    height: 100px;
-    width: 75%;
+    height: 80px;
+    width: 100%;
+    border-bottom: 20px solid white;
 
 }
 
@@ -39,9 +45,41 @@ nav ul li {
     list-style: none;
     margin: 40px;
     line-height: 1px;
-    
 }
 
-.clearfix {
-    clear: both;
+
+
+#content {
+    float: left;
+    width: calc(75% - 100px);
+    background: rgb(255, 153, 255);
+    min-height: 550px;
+    border-right: 20px solid white;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.article {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+aside {
+    float: left;
+    width: calc(25% - 10px);
+    background: rgb(255, 153, 102);
+    min-height: 540px;
+    padding: 25px;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-top:20px solid white;
 }
